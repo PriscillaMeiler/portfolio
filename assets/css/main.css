@@ -72,7 +72,7 @@ header.page-header nav li:hover::after { width: 100%; }
 .work.home .portfolio-piece { padding-bottom: 40px; text-align: center; grid-template-columns: repeat( 3, 1fr ); grid-gap: 30px;  }
     @media screen and (max-width:1100px) { .work.home .portfolio-piece { grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); } }
     
-    .grid-item { min-height: 300px; border-radius: 10px; background-image: url('../img/portfolio-placeholder.jpg'); background-size: cover; transition: all .3s ease-in-out; overflow: hidden; }
+    .grid-item { min-height: 300px; border-radius: 10px; box-shadow: 0 0 10px 1px #a1a1a1; background-image: url('../img/portfolio-placeholder.jpg'); background-size: cover; transition: all .3s ease-in-out; overflow: hidden; }
     .hover { min-height: 300px; display: flex; align-items: center; justify-content: center; position: relative; height: 100%; transform: translateY(100%); opacity: 0; transition: all 1s ease-in-out; }
     .grid-item:hover .hover { transform: translateY(0); opacity: 1; }
     .hover-content { position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 40px; color: white; z-index: 1; }
@@ -83,13 +83,15 @@ header.page-header nav li:hover::after { width: 100%; }
     .grid-item.width-2x { grid-column: span 2; }
 
     /* Backgrounds */
-    .grid-item.treelhas { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/treelhas.png"); background-position: top center; }
-    .grid-item.jauense { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/jauense2.png"); background-position: center; }
-    .grid-item.oriom { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/oriom.png"); background-position: center; }
-    .grid-item.agency360 { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/360degree.png"); background-position: center; }
-    .grid-item.thinklab { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/thinklab.png"); background-position: top; }
-    .grid-item.project-99causas { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/99causas.png"); background-position: top center; }
-    .grid-item.administradores { box-shadow: 0 0 10px 1px #a1a1a1; background-image: url("../img/portfolio/administradores.png"); background-position: top center; }
+    .grid-item.treelhas { background-image: url("../img/portfolio/treelhas.png"); background-position: top center; }
+    .grid-item.jauense { background-image: url("../img/portfolio/jauense2.png"); background-position: center; }
+    .grid-item.oriom { background-image: url("../img/portfolio/oriom.png"); background-position: center; }
+    .grid-item.agency360 { background-image: url("../img/portfolio/360degree.png"); background-position: center; }
+    .grid-item.thinklab { background-image: url("../img/portfolio/thinklab.png"); background-position: top; }
+    .grid-item.project-99causas { background-image: url("../img/portfolio/99causas.png"); background-position: top center; }
+    .grid-item.administradores { background-image: url("../img/portfolio/administradores.png"); background-position: top center; }
+    .grid-item.frequenciabecks { background-image: url("../img/portfolio/frequenciabecks.png"); background-position: center center; }
+    .grid-item.mostradecinema { background-image: url("../img/portfolio/44mostra.jpg"); background-position: top center; }
 
 /* Contact Home */
 .contact.home.container { position: relative; margin-top: 2rem; z-index: 2; }
