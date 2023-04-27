@@ -154,11 +154,16 @@
     <div class="card">
       <h2>Contact</h2>
       <p>If you want to ask me a question, give me a suggestion, or even talk to a friend, feel free to use this form.</p>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="E-mail">
-        <textarea placeholder="Message"></textarea>
+      <form action="https://formspree.io/f/xdovyvan" method="POST">
+        <input type="text" id="name" name="user_name" placeholder="Name"/>
+        <input type="email" id="mail" name="user_mail" placeholder="E-mail" />
+        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
         <button type="submit" class="button">Send</button>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Contact from my Portfolio HTML Site"
+        />
       </form>
     </div>
   </section>
